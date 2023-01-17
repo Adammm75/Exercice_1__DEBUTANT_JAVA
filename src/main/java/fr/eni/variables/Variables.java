@@ -43,11 +43,33 @@ public class Variables {
         Scanner scanInput  = new Scanner(System.in);
         System.out.print("Saisir une chaîne A : ");
         String strA = scanInput.next();
+        repet(intA, strA);
         System.out.print("Saisir une chaîne B : ");
         String strB = scanInput.next();
         String strAplusB = strA + " " + strB;
         System.out.println(strAplusB); 
         // --------------------------------------------------
+        
+/*
+        System.out.println("Saisir une str");
+        String STRA = scanInput.next();
+        System.out.println("Saisir le nombre de fois que tu veux saisir ton nombre");
+        int int1 = Integer.parseInt(scanInput.next());
+        repet(int1, STRA);
+        //String resultat4 = repet(STRA,int1);
+        //System.out.println(resultat4);
+*/        
+        
+        strA = scanInput.next();
+
+        repet(intA, strA);
+        strA = scanInput.next();
+        repet(intA, strA);
+        strA = scanInput.next();
+        repet(intA, strA);
+        strA = scanInput.next();
+        repet(intA, strA);
+
         
         // -------------------liste--------------------------
         String[] arrStrA = {"a", "b", "c", "d"};
@@ -67,4 +89,26 @@ public class Variables {
         // --------------------------------------------------
         
     }
+    
+    public static void repet(int nbRepet,String chaineRepet)
+    {
+        for(int i = 0;i<=nbRepet;i++)
+        {
+            System.out.println(chaineRepet);
+        }
+        
+    }
+   /* public static void repet(int a, String b)
+    {
+
+        int compteur = 0; 
+        while(compteur != 10)
+        {
+            System.out.println(i);
+            i= i+1; 
+            
+            
+        }
+    }
+    */
 }
