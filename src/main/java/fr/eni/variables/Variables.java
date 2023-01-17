@@ -92,9 +92,11 @@ public class Variables {
     
     public static void repet(int nbRepet,String chaineRepet)
     {
-        for(int i = 0;i<=nbRepet;i++)
+        int i = 0;        
+        while(i <= nbRepet)
         {
             System.out.println(chaineRepet);
+            i++;
         }
         
     }
